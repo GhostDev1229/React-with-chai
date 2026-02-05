@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { useEffect, useState } from "react"
 import { ThemeProvider } from "./context/theme.jsx"
 import ThemeButton from "./Components/ThemeButton.jsx"
@@ -36,6 +37,33 @@ function App() {
             </div>
     </ThemeProvider>
 
+=======
+import { useState } from "react";
+
+function App() {
+
+  let[counter,setCounter]=useState(5);
+
+  const addValue = () => {
+    if(counter>=20) return;
+  setCounter(counter+1);
+  }
+
+   const decValue = () => {
+    if(counter<=0) return;
+  setCounter(counter-1) ;
+  }
+
+  return (
+    <>
+    <h1>chai aur react</h1>
+    <h2>counter value: {counter} </h2>
+
+    <button onClick={addValue}>add value</button>
+    <br />
+    <button onClick={decValue}>Decrese value</button>
+    </>
+>>>>>>> b90deba90f53a6f109db4f6c06f06cdb64edbf7a
   )
 }
 
